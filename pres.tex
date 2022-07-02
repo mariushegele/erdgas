@@ -47,9 +47,6 @@
 \usepackage{algorithm}
 \usepackage[noend]{algpseudocode}
 
-\usepackage{xcolor}
-\input{colors.tex}
-
 \usepackage{xmpmulti}
 
 
@@ -60,8 +57,8 @@
 \newcommand{\themename}{\textbf{\textsc{metropolis}}\xspace}
 
 \title{Die Abhängigkeit von den Autokratien}
-\subtitle{Brauchen wir russisches Erdgas? Ist Erdgas nachhaltig?}
-\date{\today}
+\subtitle{Brauchen wir (russisches) Erdgas? Ist Erdgas nachhaltig?}
+\date{17. Juni 2022}
 \author{Marius Hegele}
 \institute{Technik und Fortschritt im Anthropozän, SoSe 2022, ZAK/KIT}
 % \titlegraphic{\hfill\includegraphics[height=1.5cm]{logo.pdf}}
@@ -69,21 +66,6 @@
 \begin{document}
 
 \maketitle
-
-\begin{frame}{Inhaltsverzeichnis}
-  \setbeamertemplate{section in toc}[sections numbered]
-  \begin{columns}
-  \column[T]{0.5\textwidth}
-  Teil I: Brauchen wir (russisches) Erdgas?
-  \tableofcontents[hideallsubsections,part=1]
-  \column[T]{0.5\textwidth}
-  Teil II: Ist Erdgas nachhaltig?
-  \tableofcontents[hideallsubsections,part=2]
-  \end{columns}
-\end{frame}
-
-\part{Brauchen wir (russisches) Erdgas?}
-\frame{\partpage}
 
 \begin{frame}{Motivation}
 
@@ -96,24 +78,49 @@
     \item umgekehrt machen Exporte nach DE 25\% der russischen Gasexporte aus\footfullcite{iwd}
     \item Deutsche Erdgasspeicher Stand 05.03. nur zu 27\% gefüllt (normal 50-80\%)\footcite{leo}
       % erheblicher Teil über Konzernbeteiligung von Gazprom kontrolliert
-    \item 30.03: BMWK ruft Frühwarnstufe des Notfallplans Gas aus\footfullcite{bmwk}:
-      jeder Verbraucher ist angehalten seinen Verbrauch so gut wie möglich zu reduzieren
+    \item 30.03: BMWK ruft Frühwarnstufe des Notfallplans Gas aus\footfullcite{bmwk}
+      % jeder Verbraucher ist angehalten seinen Verbrauch so gut wie möglich zu reduzieren
     % \item Russland droht mit Gaslieferstopp, akzeptiert die Bezahlung nur noch in Rubel\footcite{bmwk}
-    \item 14.06: Gazprom schickt nur noch 0.7 statt 1.7 TWh/d (-59\%) durch Nord Stream Leitung (Reparaturarbeiten)\footfullcite{gazprom-gasverknappung}
+    \item 15.06: Gazprom schickt nur noch 0.7 statt 1.7 TWh/d (-59\%) durch Nord Stream Leitung (Reparaturarbeiten)\footfullcite{gazprom-gasverknappung}
   \end{itemize}
   }
+\end{frame}
+
+\part{Brauchen wir (russisches) Erdgas?}
+\frame{\partpage}
+
+\begin{frame}{Teil I: Brauchen wir (russisches) Erdgas?}
+  \setbeamertemplate{section in toc}[sections numbered]
+  \tableofcontents[hideallsubsections,part=1]
 \end{frame}
 
 
 \section{Direkter Ersatz durch Importe}
 
 \begin{frame}
-\begin{figure}
-\includegraphics[height=0.8\textheight]{fig/erdgasreserven.png}
-
+\begin{columns}
+\column{0.7\textwidth}
+\includegraphics[height=0.95\textheight]{fig/erdgasreserven.png}
+\column{0.3\textwidth}
+\centering
 \scriptsize{\fullcite{statista-erdgasreserven}}
-\end{figure}
+\end{columns}
 \end{frame}
+
+\begin{frame}{Abhängigkeit von Autokratien}
+  ``Der Fluch der Rohstoffe'' / ``Paradox of Plenty''
+
+  Reichtum an Rohstoffen = Demokratiedefizit, extreme Korruption, Entwicklungshemmnis
+
+  Rohstoffe (Energieträger, industrielle Rohstoffe, Minerale, \dots) als bedeutende Einnahmequellen für Eliten:
+  Gewinne fließen nicht in die Entwicklung, sondern in die Aufrechterterhaltung der Herrschaft
+
+  Instabilität und kriegerische Auseinandersetzung über Kontrolle der Rohstoffe
+
+  \smallskip
+  \scriptsize{\fullcite{gabler}}
+\end{frame}
+
 
 \begin{frame}{Pipelineimporte}
 \begin{columns}
@@ -121,7 +128,10 @@
 \includegraphics[width=\textwidth]{fig/gaspipelines.png}
 \scriptsize{\fullcite{gaspipelines}}
 \column{0.3\textwidth}
-Erhöhung Importe aus Aserbaidschan, Norwegen 2022 um 106 TWh EU-weit möglich
+Erhöhung Importe aus Aserbaidschan, Norwegen 2022 um 106 TWh EU-weit möglich.
+
+\centering
+\smallskip
 \scriptsize{\fullcite{iea2022}}
 \end{columns}
 \end{frame}
@@ -164,21 +174,20 @@ Erhöhung Importe aus Aserbaidschan, Norwegen 2022 um 106 TWh EU-weit möglich
 \item Große Investition nicht sinnvoll, mittelfristig: Klimaneutralität
 % \item Schiefergas (Fracking): Grundwasserverschmutzung
   \end{itemize}
-
 \end{frame}
 
 \section{Ansätze im Verbrauch}
 
 \begin{frame}
 % zweitwichtigster Energieträger
-\begin{figure}
-\includegraphics[width=0.9\textwidth]{fig/Energieflussbild-2020_PJ_lang_DE_20220401}
+% \begin{figure}
+\includegraphics[width=1.1\textwidth]{fig/Energieflussbild-2020_PJ_lang_DE_20220401}
 
-\scriptsize{\fullcite{energieflussbild}}
-\end{figure}
+% \scriptsize{\fullcite{energieflussbild}}
+% \end{figure}
 \end{frame}
 
-\begin{frame}{Gasspeicher nutzen}
+\begin{frame}{Gasspeicher regulieren}
   \begin{itemize}
     \item 265 TWh Kapazität in Deutschland \footfullcite{iwd}
     \item Russland kontrolliert über Konzerbeteiligung erheblichen Teil der Speicher
@@ -213,9 +222,9 @@ Insgesamt 598 TWh/a (66\%) Erdgas. 49,5\% der Heizungen sind Gasheizungen.
     \item automatisch: Einsparungen durch sowieso schon hohe Preise  \\
       $\Rightarrow$ keine Steuersenkungen oder andere Subventionen (stattdessen Energiegeld) \footfullcite{clausen2022}
     \item Intelligentes Heizen: Vernetzte Thermostatventile, Heizungssteuerungen: Welche Räume wann und wie heizen? \footcite{clausen2022}
-    \item Regularien entwickeln, sodass sich (nur langfristig rentable) Energiesparmaßnahmen
-      betriebswirtschaftlich rechnen \footcite{clausen2022}
-      % (Reduzierung der gesetzlichen Abschreibungsfristen) 
+    % \item Regularien entwickeln, sodass sich (nur langfristig rentable) Energiesparmaßnahmen
+    %   betriebswirtschaftlich rechnen \footcite{clausen2022}
+    %   % (Reduzierung der gesetzlichen Abschreibungsfristen) 
     \item Sanierungen: standardisierte Upgrades (Isolation) \footfullcite{iea2022}
   \end{itemize}
   }
@@ -224,11 +233,11 @@ Insgesamt 598 TWh/a (66\%) Erdgas. 49,5\% der Heizungen sind Gasheizungen.
 \begin{frame}{Langfristiger Ersatz im Wärmesektor}
  \begin{itemize} 
     \item Anschluss an Wärmenetze
-    \item Elektrifizierung über Wärmepumpen (langfristig 60-70\% des Wärmebedarfs)
+    \item Elektrifizierung über Wärmepumpen (langfristig 60-70\% des Wärmebedarfs) \footfullcite{clausen2022}
     \item Regenerative Wärmequellen: Solarthermie, Geothermie, (Abfallverbrennung, Biomasse)
-      (mit Erdbecken-Wärmespeicher) \footfullcite{clausen2022}
+      (mit Erdbecken-Wärmespeicher) \footcite{clausen2022}
+    \item (Wasserstoff in dezentralen (Gas-)Heizungen)\footcite{clausen2022}
     \item Effiziente Wärmeverteilung durch effiziente Pumpen \footfullcite{ei1}
-    \item \sout{Wasserstoff in dezentralen (Gas-)Heizungen}
  \end{itemize}
  % Block-Heizkraftwerke?
  % Tangierend notwendige Maßnahmen: Fachkräfteinitative Wärmepumpeninstallation, 
@@ -297,7 +306,7 @@ Insgesamt 598 TWh/a (66\%) Erdgas. 49,5\% der Heizungen sind Gasheizungen.
       technisch herausfordernd und ökonomisch aufwendig \footcite{leo}
     \item Erneuerbare Energien: 
       45 TWh = 40\% der bisher installierten Kapazität 
-      $\Rightarrow$ Installationsverfahren vereinfachen, Förderprogramme \footcite{leo}
+      $\Rightarrow$ Flächenausweisung, Verfahren vereinfachen, Förderprogramme \footcite{leo}
     \item Ersatz für Gas als Flexibilitätsquelle (Frequenzstablitätsregelung):
       Kurz- und Langfristspeicher, Demand Side Management \footcite{iea2022}
       % Spitzenlastabdeeckung, demand shifting, peak shaving, schnelle Regelbarkeit
@@ -319,6 +328,7 @@ Insgesamt 598 TWh/a (66\%) Erdgas. 49,5\% der Heizungen sind Gasheizungen.
 \begin{frame}
   \begin{columns}
   \column{0.8\textwidth}
+  \only<2>{
   Beispiel Ammoniakherstellung: 99\% nach Haber-Bosch Verfahren\footnotemark:
 
   \begin{scriptsize}
@@ -329,11 +339,11 @@ Insgesamt 598 TWh/a (66\%) Erdgas. 49,5\% der Heizungen sind Gasheizungen.
   \end{scriptsize}
 
   Verwendung: größtenteils Düngemittelproduktion
-
+  }
   \column{0.2\textwidth}
   \includegraphics[width=0.9\textwidth]{fig/campus_hochdruck_reaktor.png}
   \end{columns}
-  \footnotetext[25]{\fullcite{smil}}
+  \only<2>{\footnotetext[25]{\fullcite{smil}}}
 \end{frame}
 
 \begin{frame}{Wasserstoffproduktion ohne Erdgas}
@@ -353,18 +363,17 @@ Insgesamt 598 TWh/a (66\%) Erdgas. 49,5\% der Heizungen sind Gasheizungen.
 \end{frame}
 
 
+
 \part{Ist Erdgas nachhaltig?}
 \frame{\partpage}
 
+\begin{frame}{Teil II: Ist Erdgas nachhaltig?}
+  \setbeamertemplate{section in toc}[sections numbered]
+  \tableofcontents[hideallsubsections,part=2]
+\end{frame}
+
 \section{EU-Taxonomie}
 
-\begin{frame}
-\begin{figure}
-\includegraphics[width=\textwidth]{fig/headline-taxonomie.png}
-
-\scriptsize{\fullcite{spiegel-taxonomie}}
-\end{figure}
-\end{frame}
 
 \begin{frame}{EU Verordnung: Taxonomie für nachhaltige Entwicklung}
   \small
@@ -379,6 +388,14 @@ Insgesamt 598 TWh/a (66\%) Erdgas. 49,5\% der Heizungen sind Gasheizungen.
         % $\Rightarrow 1,4 \cdot 10^9$ tCO2e nachhaltig, wenn alle Kohlekraftwerke durch Gaskraftwerke ersetzt werden
     \end{itemize}
   \end{itemize}
+\end{frame}
+
+\begin{frame}
+\begin{figure}
+\includegraphics[width=\textwidth]{fig/headline-taxonomie.png}
+
+\scriptsize{\fullcite{spiegel-taxonomie}}
+\end{figure}
 \end{frame}
 
 \section{Pro}
@@ -399,13 +416,13 @@ Insgesamt 598 TWh/a (66\%) Erdgas. 49,5\% der Heizungen sind Gasheizungen.
     \item Leckage in Pipelines\footfullcite{reuters}, Methan als kurzfristig sehr potentes Treibhausgas (25 CO2e)\footfullcite{uba-co2e}
     \item Setzt falsche Anreize: Gaskraftwerke anstatt EE\footfullcite{uba}
     \item Verstößt gegen den Grundsatz der Technologieneutralität: für andere gelten maximal 100 gCO2e/kWh\footcite{uba}
-    \item Taxonomie-Konformität schwer zu prüfen: Unsicherheit bei Investition\footcite{uba}
+    % \item Taxonomie-Konformität schwer zu prüfen: Unsicherheit bei Investition\footcite{uba}
     \item Gefährdet Bedeutung und Glaubwürdigkeit der Taxonomie\footfullcite{dnr}
   \end{itemize}
 \end{frame}
 
 \begin{frame}{Ersatzvorschlag}
-  Stattdessen\footfullcite{uba}:
+  Stattdessen\footfullcite{uba}
   \begin{itemize}
     \item separat regulieren
     \item jährliche Grenzwerte mit abnehmendem Verlauf
@@ -447,6 +464,25 @@ Insgesamt 598 TWh/a (66\%) Erdgas. 49,5\% der Heizungen sind Gasheizungen.
     \item Große Pipeline haben mit 24 GW achtfache Übertragungskapazität von Hochspannungsleitung
     \item Gasnetz hat hohe existierende Speicherkapazität (265 TWh)
   \end{itemize}
+\end{frame}
+
+\begin{frame}
+\begin{figure}
+\includegraphics[width=\textwidth]{fig/multimodal-energy-grid.png}
+
+\scriptsize{\fullcite{multimodal-grids}}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Anregung zur Diskussion}
+    \begin{itemize}
+      \item Kurzfristig: Importersatz durch LNG, wenn auch schwierig, teurer und nicht nachhaltig  
+      \item Einsparungen über Kraft-Wärme-Kopplung, Sanierungen, intelligentes Heizen
+      \item Teure Investitionen in Infrastruktur über die nächsten Jahrzehnte: Erneuerbare Energien, Wärmepumpen, Batterien, Wasserstoff
+      \item Hand in Hand mit der Transformation zur Klimaneutralität 
+      \item Einschränkung: Stabilität Stromnetz -- Gaskraftwerke als Enabler für PV und Wind
+      \item Gas nicht nachhaltig, die dafür gebaute Infrastruktur schon (Wasserstoff)
+    \end{itemize}
 \end{frame}
 
 \begin{frame}[allowframebreaks]
